@@ -34,6 +34,8 @@ ZED Stereo Camera
 ## Other Requirements
 This code can be run over a live feed, but that is part of the whole pipeline (the complete pipeline includes all three, perception, planning, and control modules). I have shared the python file in this repository that uses bag files to retrieve the frames from a pre-recorded video. The example bag files can be downloaded from this [link](https://iu.box.com/s/p5ambtjg02qxxj2q0e0kcuj7fcf67h7o).
 
+YOLO weights (yolov3.weights) can be downloaded from the [official YOLO website](https://pjreddie.com/darknet/yolo/).
+
 # Run this command for output
 ```
 python Racecar.py <path-of-the-bagfile>
