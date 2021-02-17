@@ -41,4 +41,5 @@ python Racecar.py <path-of-the-bagfile>
 
 # Output 
 The code writes processed frames into file `output.avi`.
+
 ![output](demo/output_1.gif)
