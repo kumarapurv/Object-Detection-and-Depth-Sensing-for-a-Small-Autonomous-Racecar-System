@@ -7,7 +7,7 @@ Soon after we started, the pandemic broke. Coronavirus had entered the US and we
 
 # Abstract
 The first step to build an autonomous racecar is to help it perceive its environment, which then helps it figure out its next steps to obtain complete autonomy. With Computer Vision techniques in the perception stage, we enable the small autonomous racecar to gather an understanding of objects that are around it while it is on the run.  
-This project's main objective is to design an algorithm to process the raw data from the sensors (in this case, a stereo camera) into meaningful observations and provide the information about the surroundings to the master controller of the racecar. With the help of YOLOv3 to perform object detection and calculating the distance of these objects using ROS on the ZED Stereo Camera running over NVIDIA Jetson TX2, the algorithm will help the racecar communicate this information to its controller, which can further determine the path the racecar should take. 
+This project's main objective is to design an algorithm to process the raw data from the sensors (in this case, a stereo camera) into meaningful observations and provide the information about the surroundings to the master controller of the racecar. With the help of `YOLOv3` to perform object detection and calculating the distance of these objects using ROS on the ZED Stereo Camera running over NVIDIA Jetson TX2, the algorithm will help the racecar communicate this information to its controller, which can further determine the path the racecar should take. 
 Moreover, the racecar's reaction time should be high, and therefore the challenge is to design the algorithm to help the racecar make decisions very quickly. This project only implements the Computer Vision part (Perception stage) of the racecar.
 
 # Requirements
@@ -23,9 +23,13 @@ math
 ```
 
 ## Hardware Requirements
-![NVIDIA Jetson TX2](<IMG_20200429_091806.jpg>)
+```
+NVIDIA Jetson TX2
+ZED Stereo Camera
+```
+![NVIDIA Jetson TX2](<images/IMG_20200429_091806.jpg>)
 
-![ZED Stereo Camera](<IMG_20200429_092927.jpg>)
+![ZED Stereo Camera](<images/IMG_20200429_092927.jpg>)
 
 ## Other Requirements
 This code can be run with live feed, but that is part of the whole pipeline (the whole pipeline includes both perception and control of the system). In this repository, I have shared the python file which uses bag files to retrieve the frames from a pre-recoded video. The example bag files can be downloaded from this [link](https://iu.box.com/s/p5ambtjg02qxxj2q0e0kcuj7fcf67h7o).
@@ -37,3 +41,4 @@ python Racecar.py <path-of-the-bagfile>
 
 # Output 
 The code writes processed frames into file `output.avi`.
+![output](demo/output_1.gif)
