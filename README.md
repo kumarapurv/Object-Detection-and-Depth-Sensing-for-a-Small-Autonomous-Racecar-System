@@ -23,10 +23,9 @@ math
 ```
 
 ## Hardware Requirements
-```
-NVIDIA Jetson TX2
-ZED Stereo Camera
-```
+![NVIDIA Jetson TX2](<IMG_20200429_091806.jpg>)
+
+![ZED Stereo Camera](<IMG_20200429_092927.jpg>)
 
 ## Other Requirements
 This code can be run with live feed, but that is part of the whole pipeline (the whole pipeline includes both perception and control of the system). In this repository, I have shared the python file which uses bag files to retrieve the frames from a pre-recoded video. The example bag files can be downloaded from this [link](https://iu.box.com/s/p5ambtjg02qxxj2q0e0kcuj7fcf67h7o).
