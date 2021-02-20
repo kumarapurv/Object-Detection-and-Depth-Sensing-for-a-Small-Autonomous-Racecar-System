@@ -29,9 +29,8 @@ math
 NVIDIA Jetson TX2
 ZED Stereo Camera
 ```
-![NVIDIA Jetson TX2](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/IMG_20200429_091806.jpg)
-
-![ZED Stereo Camera](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/IMG_20200429_092927.jpg)
+![](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/IMG_20200429_091806.jpg)
+![](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/IMG_20200429_092927.jpg)
 
 ## Other Requirements
 This code can be run over a live feed, but that is part of the whole pipeline (the complete pipeline includes all three, perception, planning, and control modules). I have shared the python file in this repository that uses bag files to retrieve the frames from a pre-recorded video. The example bag files can be downloaded from this [link](https://iu.box.com/s/p5ambtjg02qxxj2q0e0kcuj7fcf67h7o).
