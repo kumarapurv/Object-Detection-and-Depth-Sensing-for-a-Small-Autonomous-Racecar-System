@@ -10,6 +10,8 @@ The first step to build an autonomous racecar is to help it perceive its environ
 This project's main objective is to design an algorithm to process the raw data from the sensors (in this case, a stereo camera) into meaningful observations and provide the information about the surroundings to the master controller. With the help of YOLOv3 to perform object detection and calculating the distance of these objects using ROS on the ZED Stereo Camera running over NVIDIA Jetson TX2, the algorithm will help the racecar communicate this information to its controller, which can further determine the path the racecar should take. 
 Moreover, the racecar's reaction time should be high, and therefore the challenge is to design the algorithm to help the racecar make decisions very quickly. This project only implements the Computer Vision part (Perception stage) of the racecar.
 
+![](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/CV%20Proj%20-%20Block%20Diag.jpg)
+
 # Requirements
 ## Dependencies
 ```
@@ -27,9 +29,9 @@ math
 NVIDIA Jetson TX2
 ZED Stereo Camera
 ```
-![NVIDIA Jetson TX2](<images/IMG_20200429_091806.jpg>)
+![NVIDIA Jetson TX2](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/IMG_20200429_091806.jpg)
 
-![ZED Stereo Camera](<images/IMG_20200429_092927.jpg>)
+![ZED Stereo Camera](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/images/IMG_20200429_092927.jpg)
 
 ## Other Requirements
 This code can be run over a live feed, but that is part of the whole pipeline (the complete pipeline includes all three, perception, planning, and control modules). I have shared the python file in this repository that uses bag files to retrieve the frames from a pre-recorded video. The example bag files can be downloaded from this [link](https://iu.box.com/s/p5ambtjg02qxxj2q0e0kcuj7fcf67h7o).
