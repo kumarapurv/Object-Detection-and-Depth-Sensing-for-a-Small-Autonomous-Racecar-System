@@ -16,13 +16,16 @@ Moreover, the racecar's reaction time should be high, and therefore the challeng
 ## Dependencies
 ```
 python 2.x
+Darknet
 rospy
 roslib
 open-cv
 cv_bridge
 numpy
 math
+
 ```
+Install Darknet [here](https://pjreddie.com/darknet/install/).
 
 ## Hardware Requirements
 ```
@@ -44,5 +47,7 @@ python Racecar.py <path-of-the-bagfile>
 
 # Output 
 The code writes processed frames into file `output.avi`.
+
+As seen in the output, the <ins>label</ins> of the objects and their <ins>distance</ins> from the stereo camera are mentioned on the top left of the bounding boxes.
 
 ![output](https://github.com/kumarapurv/Object-Detection-and-Depth-Sensing-for-a-Small-Autonomous-Racecar-System/blob/main/demo/output_1.gif)
